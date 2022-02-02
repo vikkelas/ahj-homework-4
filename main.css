@@ -1,0 +1,107 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.cards__title {
+  font-size: 22px;
+  text-align: center
+}
+
+.cards__list {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.card__item {
+  display: inline-block;
+  background: no-repeat center;
+  font-size: 0;
+  min-width: 40px;
+  min-height: 30px;
+  padding-right: 10px;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  align-self: center;
+  font-size: 18px;
+}
+
+.form__input {
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.form__button {
+  font-weight: 600;
+  max-width: 130px;
+  padding: 8px;
+  align-self: center;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  color: rgb(53, 22, 1);
+  background-color: rgb(26, 236, 26);
+}
+
+.form__button:hover {
+  background-color: rgb(22, 175, 22);
+}
+
+.form__button:active {
+  background-color: rgb(20, 197, 20);
+  border: 1px solid black
+}
+
+
+.mir {
+  background-image: url(5a4967e59482024ec03fbe5f29f92043.png);
+}
+
+.visa {
+  background-image: url(45f8abe847378032b03c25bae7a9fa0b.png)
+}
+
+.mastercard {
+  background-image: url(ad5e1774c1ffd7e675fc3b6405ddc3d6.png)
+}
+
+.american-express {
+  background-image: url(d5992ac96b263105781cd8133ae10878.png)
+}
+
+.diners-club {
+  background-image: url(f0eed65a8a55e128a80e31594fefa5f7.png)
+}
+
+.discover {
+  background-image: url(56d814f23c43048a59fcaad8dbf8ff2e.png)
+}
+
+.jsb {
+  background-image: url(349d16b82772c953f4f592bf9c52beff.png)
+}
+
+.no-valid {
+  opacity: .5;
+}
+
+.message {
+  color: red;
+  text-align: right;
+  position: relative;
+  left: 220px;
+  bottom: 60px;
+}
+
