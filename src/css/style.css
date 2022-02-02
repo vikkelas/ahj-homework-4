@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.cards__title {
+  font-size: 22px;
+  text-align: center
+}
+
+.cards__list {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.card__item {
+  display: inline-block;
+  background: no-repeat center;
+  font-size: 0;
+  min-width: 40px;
+  min-height: 30px;
+  padding-right: 10px;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  align-self: center;
+  font-size: 18px;
+}
+
+.form__input {
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.form__button {
+  font-weight: 600;
+  max-width: 130px;
+  padding: 8px;
+  align-self: center;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  color: rgb(53, 22, 1);
+  background-color: rgb(26, 236, 26);
+}
+
+.form__button:hover {
+  background-color: rgb(22, 175, 22);
+}
+
+.form__button:active {
+  background-color: rgb(20, 197, 20);
+  border: 1px solid black
+}
+
+
+.mir {
+  background-image: url(../img/icons8-мир-48.png);
+}
+
+.visa {
+  background-image: url(../img/icons8-виза-48.png)
+}
+
+.mastercard {
+  background-image: url(../img/icons8-мастеркард-48.png)
+}
+
+.american-express {
+  background-image: url(../img/icons8-амекс-48.png)
+}
+
+.diners-club {
+  background-image: url(../img/icons8-diners-club-48.png)
+}
+
+.discover {
+  background-image: url(../img/icons8-discover-48.png)
+}
+
+.jsb {
+  background-image: url(../img/icons8-jcb-48.png)
+}
+
+.no-valid {
+  opacity: .5;
+}
+
+.message {
+  color: red;
+  text-align: right;
+  position: relative;
+  left: 220px;
+  bottom: 60px;
+}
