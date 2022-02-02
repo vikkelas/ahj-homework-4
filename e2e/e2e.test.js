@@ -1,6 +1,6 @@
 import puppetteer from 'puppeteer';
 import {
-  fork,
+  fork
 } from 'child_process';
 
 jest.setTimeout(30000); // default puppeteer timeout
@@ -35,22 +35,7 @@ describe('Credit Card Validator form', () => {
     server.kill();
   });
 
-  test.each([
-    ['4939344763173176', 'visa'],
-    ['5333468245447699', 'mastercard'],
-    ['347469319299185', 'amex'],
-    ['6011621390591920', 'discover'],
-    ['3544094226330868', 'jcb'],
-    ['36053449243713', 'dinersclub'],
-    ['2204376782288637', 'mir'],
-  ])('luhnAlgorithm pass, identifyIssuer pass', async (number, issuer) => {
+  test('should add do something', async () => {
     await page.goto(baseUrl);
-    const form = await page.$('.card-check');
-    const input = await form.$('.card-check__card-number');
-    const submitButton = await form.$('.card-check__submit-button');
-    await input.type(number);
-    submitButton.click();
-    await page.waitForSelector('.card-check-status.valid-card');
-    await page.waitForSelector(`.${issuer}.active`);
   });
 });
