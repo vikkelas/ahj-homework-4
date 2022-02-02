@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 /* eslint-disable linebreak-style */
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
@@ -27,7 +28,7 @@ module.exports = {
         test: /\.html$/,
         use: [{
           loader: 'html-loader',
-        }, ],
+        }],
       },
       {
         test: /\.css$/,
@@ -42,7 +43,7 @@ module.exports = {
           options: {
             limit: false,
           },
-        }, ],
+        }],
       },
     ],
   },
