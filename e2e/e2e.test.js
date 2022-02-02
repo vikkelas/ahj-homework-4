@@ -1,6 +1,7 @@
+/* eslint-disable linebreak-style */
 import puppetteer from 'puppeteer';
 import {
-  fork
+  fork,
 } from 'child_process';
 
 jest.setTimeout(30000); // default puppeteer timeout
