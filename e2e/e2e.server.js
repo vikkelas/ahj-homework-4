@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable import/no-extraneous-dependencies */
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
